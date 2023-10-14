@@ -12,7 +12,7 @@ $titulo = 'Hola mundo';
 $header = 'From: ' . $email;
 $msjCorreo = "Nombre: $nombre\n Telefono: $telefono\n E-Mail: $email\n Mensaje:\n $mensaje";
 
-if ($_POST['submit']) {
+
 
     if (mail($para, $titulo, $msjCorreo, $header)) {
 
@@ -22,6 +22,6 @@ if ($_POST['submit']) {
     } else {
         echo 'Falló el envio';
     }
-}
+
 
 ?>
