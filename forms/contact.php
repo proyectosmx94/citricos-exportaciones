@@ -7,18 +7,21 @@ $telefono = $_POST['telefono'];
 $mensaje = $_POST['message'];
 
 // Datos del email
-$para = 'contacto@citricoscs.com';
-$titulo = 'Prueba';
+$para = $email;
+$titulo = 'S&S Solicitud de presupuesto';
 $header = 'From: ' . $email;
 $msjCorreo = "Nombre: $nombre\n Telefono: $telefono\n E-Mail: $email\n Mensaje:\n $mensaje";
 
-if (mail($para, $titulo, $msjCorreo, $header)) {
+if ($_POST['submit']) {
 
-  echo "<script language='javascript'>
-  alert('Mensaje enviado, muchas gracias por contactar con nosotros.');
-  </script>";
-  } else {
-      echo 'Falló el envio';
-  }
+    if (mail($para, $titulo, $msjCorreo, $header)) {
+
+    echo "<script language='javascript'>
+    alert('Mensaje enviado, muchas gracias por contactar con nosotros.');
+    </script>";
+    } else {
+        echo 'Falló el envio';
+    }
+}
 
 ?>
