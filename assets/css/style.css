@@ -1010,11 +1010,7 @@ section {
   text-align: center;
   list-style: none;
   margin-bottom: 0;
-  display: inline-block;
-}
-
-.carousel-indicators li {
-  margin: 0;
+  /* display: inline-block; */
 }
 
 /* Pricing Table Section
@@ -1144,7 +1140,7 @@ section {
 /* Newsletter Section
 --------------------------------*/
 #newsletter {
-  background: rgba(0, 0, 0, 0) url(../img/newsletter-bg.jpg) no-repeat center top fixed;
+  background: rgba(0, 0, 0, 0) url(../img/empresa.jpeg) no-repeat center top fixed;
   background-size: cover;
 }
 
