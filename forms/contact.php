@@ -8,9 +8,9 @@ $mensaje = $_POST['message'];
 
 // Datos del email
 $para = "contacto@citricoscs.com";
-$titulo = 'Hola mundo';
+$titulo = 'Solicitud de Informacioón';
 $header = 'From: ' . $email;
-$msjCorreo = "Nombre: $nombre\n Telefono: $telefono\n E-Mail: $email\n Mensaje:\n $mensaje";
+$msjCorreo = "Nombre: $nombre\n Teléfono: $telefono\n E-Mail: $email\n Mensaje:\n $mensaje";
 
 
 
