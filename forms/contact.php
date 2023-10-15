@@ -17,6 +17,9 @@ $msjCorreo = "Nombre: $nombre\n Telefono: $telefono\n Correo: $email\n Mensaje:\
     if (mail($para, $titulo, $msjCorreo, $header)) {
 
     echo 'OK';
+    // "<script language='javascript'>
+    // alert('Mensaje enviado, muchas gracias por contactar con nosotros.');
+    // </script>";
     } else {
         echo 'Falló el envio';
     }
